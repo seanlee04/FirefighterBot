@@ -1,0 +1,8 @@
+
+#CHIP 16F887
+e:
+  PORTB.5 = 1
+  PAUSE 1000
+  PORTB.5 = 0
+  PAUSE 500
+GOTO e

@@ -1,0 +1,23 @@
+
+#CHIP 16F887
+e:
+  'EDL
+  PORTB.5 = 1
+  PAUSE 250
+  PORTB.5 = 0
+  PAUSE 250
+
+  'MOTORS
+  PORTC.2 = 1
+  PORTC.5 = 1
+  PORTC.3 = 0
+  PORTC.4 = 0
+  PAUSE 1000
+
+  PORTC.2 = 0
+  PORTC.5 = 0
+  PORTC.3 = 1
+  PORTC.4 = 1
+  PAUSE 1000
+
+GOTO e
